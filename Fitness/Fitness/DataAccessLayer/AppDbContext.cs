@@ -1,5 +1,6 @@
 ﻿using Fitness.Models;
 using Microsoft.EntityFrameworkCore;
+using Fitness.ViewModels.CourseVM;
 
 namespace Fitness.DataAccessLayer
 {
@@ -11,6 +12,7 @@ namespace Fitness.DataAccessLayer
 
         public DbSet<Course>Courses { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Fitness.ViewModels.CourseVM.CourseGetVM> CourseGetVM { get; set; } = default!;
       
     }
 }

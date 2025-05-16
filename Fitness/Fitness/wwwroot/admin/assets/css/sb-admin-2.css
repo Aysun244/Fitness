@@ -261,6 +261,7 @@ select {
 
 [role="button"] {
   cursor: pointer;
+  width:auto;
 }
 
 select {
